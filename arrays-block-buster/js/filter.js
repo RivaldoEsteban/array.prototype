@@ -9,13 +9,13 @@ import {
   notPopular as leastValued
 } from './normalize.js'
 
-filter.addEventListener('change', function () {
+filter.addEventListener('change', function() {
   switch (this.value) {
     case 'most-valued':
-      return renderMovieListFromMap(mostValued, movieList)
+      return renderMovieListFromMap(mostValued,movieList)
     case 'least-valued':
-      return renderMovieListFromMap(leastValued, movieList)
+      return renderMovieListFromMap(leastValued,movieList)
     default:
-      return renderMovieListFromMap(all, movieList)
+      return renderMovieListFromMap(all,movieList)
   }
 })
